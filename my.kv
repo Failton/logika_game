@@ -1,0 +1,99 @@
+#:kivy 1.11.1
+
+<Container>:
+    cols: 3
+
+    BoxLayout:
+        orientation: 'vertical'
+
+        BoxLayout:
+            padding: 20
+            spacing: 15
+
+        BoxLayout:
+            padding: 20
+            spacing: 15
+
+        BoxLayout:
+            padding: 20
+            spacing: 15
+
+        BoxLayout:
+            padding: 20
+            spacing: 15
+
+        BoxLayout:
+            padding: 20
+            spacing: 15
+
+        BoxLayout:
+            padding: 20
+            spacing: 15
+
+        BoxLayout:
+            padding: 20
+            spacing: 15
+            Cell:
+
+            Cell:
+
+            Cell:
+
+            Cell:
+
+    BoxLayout:
+        size_hint: 0.03, 1
+        CenterRectangle:
+            size_hint: 0.2, 0.98
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+            canvas:
+                Color:
+                    rgb: 7/256, 31/256, 61/256
+         
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+    BoxLayout:
+        orientation: 'vertical'
+
+        BoxLayout:
+            padding: 50
+            spacing: 15
+            Button:
+                background_normal: ''
+                background_color: 130/256, 163/256, 255/256
+                text: 'Показать'
+                on_release:
+                    root.show_answer()
+
+            Button:
+                background_normal: ''
+                background_color: 130/256, 163/256, 255/256
+                text: 'Ответить'
+                on_release:
+                    root.check_match()
+
+        BoxLayout:
+            padding: 20
+            spacing: 15
+
+        BoxLayout:
+            padding: 20
+            spacing: 15
+
+        BoxLayout:
+            padding: 20
+            spacing: 15
+
+        BoxLayout:
+            padding: 20
+            spacing: 15
+
+        BoxLayout:
+            padding: 20
+            spacing: 15
+
+        BoxLayout:
+            padding: 20
+            spacing: 15
